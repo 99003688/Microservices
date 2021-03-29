@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+<tbody style="color:white;">
+				<tr th:each="Team: ${li}">
+					<td th:text="${Team.teamid}"></td>
+					<td th:text="${Team.teamname}"></td>
+					<td th:text="${Team.owner}"></td>
+					</tr>
+					</tbody>
+					</table>
+</body>
+</html>
